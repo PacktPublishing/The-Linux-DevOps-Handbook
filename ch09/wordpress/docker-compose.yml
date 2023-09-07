@@ -1,0 +1,47 @@
+version: '3'
+services:
+  web:
+    image: nginx:latest
+    depends_on:
+      - wordpress
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - wordpress:/var/www/html
+    networks:
+      - wordpress
+  wordpress:
+    image: wordpress:php8.2-fpm-alpine
+    depends_on:
+      - db
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: example_user
+      WORDPRESS_DB_NAME: example_database
+      WORDPRESS_DB_PASSWORD: example_password
+    restart: unless-stopped
+    volumes:
+      - wordpress:/var/www/html
+    networks:
+      - wordpress
+  db:
+    image: mariadb:10.4
+    environment:
+      MYSQL_ROOT_PASSWORD: example_password
+      MYSQL_DATABASE: example_database
+      MYSQL_USER: example_user
+      MYSQL_PASSWORD: example_password
+    restart: unless-stopped
+    volumes: 
+      - dbdata:/var/lib/mysql
+    networks:
+      - wordpress
+volumes:
+  wordpress:
+  dbdata:
+networks:
+  wordpress:
+    name: wp-wordpress
+    driver: bridge
+

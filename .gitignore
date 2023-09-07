@@ -1,0 +1,14 @@
+# Terraform
+.terraform
+*.tfstate
+
+# IDE
+.idea
+
+# Vagrant
+.vagrant
+
+# Temp files
+*.tmp
+*.swp
+*.log
