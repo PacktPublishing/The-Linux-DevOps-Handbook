@@ -1,0 +1,12 @@
+# You can use this configuration in your local system
+# by placing the file inside your ~/.ssh/config file
+
+# Show keys ascii graphics
+VisualHostKey yes
+# Offer only one Identity at a time
+Host *
+  ForwardAgent yes
+  IdentitiesOnly yes
+  IdentityFile ~/.ssh/mydefaultkey
+# Automatically add all used keys to agent
+AddKeysToAgent yes

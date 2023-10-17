@@ -1,0 +1,59 @@
+[user]
+name = Firstname Lastname
+email = your.email@domain.tld
+
+[color]
+ui = always
+
+[color "status"]
+added = blue
+changed = yellow
+untracked = white ul
+
+[color "diff"]
+meta = white bold
+frag = magenta ul
+old = red bold
+new = green bold
+
+[color "branch"]
+current = yellow reverse
+local = yellow
+remote = green
+
+[alias]
+ls = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+fl = log -u
+dlc = diff --cached HEAD^
+grep = grep -Ii
+la = "!git config -l | grep alias | cut -c 7-"
+st = status -sb
+cl = clone
+ci = commit
+co = checkout
+cb = checkout --track -b
+br = branch
+diff = diff --word-diff
+dc = diff --cached
+r = reset
+r1 = reset HEAD^
+r2 = reset HEAD^^
+rh = reset --hard
+rh1 = reset HEAD^ --hard
+rh2 = reset HEAD^^ --hard
+sl = stash list
+sa = stash apply
+ss = stash save
+sp = stash pop
+b = branch
+bl = branch --all
+bnm = branch --no-merged
+bm = branch --merged
+
+[core]
+excludesfile = ~/.gitignore
+
+[push]
+default = current
