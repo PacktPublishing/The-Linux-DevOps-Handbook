@@ -50,7 +50,7 @@ Software required | OS required |
 
 * Automating DevOps with GitLab CI/CD Pipelines [[Packt]](https://www.packtpub.com/product/automating-devops-with-gitlab-cicd-pipelines/9781803233000?utm_source=github&utm_medium=repository&utm_campaign=9781803233000) [[Amazon]](https://www.amazon.com/dp/1803233001)
 
-## Get to Know the Author
+## Get to Know the Authors
 **Damian Wojslaw**
 has been working in the IT industry since 2001. He specializes in administration and troubleshooting of Linux servers. Being a system operator and support engineer he has found DevOps philosophy a natural evolution of the way sysops work with developers and other members of the software team.
 
