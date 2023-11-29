@@ -56,3 +56,90 @@ has been working in the IT industry since 2001. He specializes in administration
 
 **Grzegorz Adamowicz**
 has been working in the IT industry since 2006 in a number of positions, including Systems Administrator, Backend Developer (PHP, Python), Systems Architect and Site Reliability Engineer. Professionally was focused on building tools and automations inside projects he is involved in. He’s also engaged with the professional community by organizing events like conferences and workshops. Grzegorz worked in many industries including Oil & Gas, Hotel, Fintech, DeFI, Automotive, Space and many more.
+
+# Additional information for the reader
+
+For some of the chapters of this book - namely chapters 12 and later - you will need an AWS account with set up billing.
+
+We are also recommending to add 2FA right after you finish creating your account
+
+Warning: a lot of resources are free-tier eligible, but some, like NAT Gateway, will be paid by the hour and data transfer.
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Creating a New AWS Account](#creating-a-new-aws-account)
+   - [Step 1: Go to AWS Signup Page](#step-1-go-to-aws-signup-page)
+   - [Step 2: Provide Account Information](#step-2-provide-account-information)
+   - [Step 3: Set Up Identity Verification](#step-3-set-up-identity-verification)
+   - [Step 4: Choose a Support Plan](#step-4-choose-a-support-plan)
+   - [Step 5: Complete the Registration](#step-5-complete-the-registration)
+3. [Setting Up Payment by Credit Card](#setting-up-payment-by-credit-card)
+   - [Step 1: Access Billing & Cost Management Console](#step-1-access-billing--cost-management-console)
+   - [Step 2: Navigate to the Payment Methods](#step-2-navigate-to-the-payment-methods)
+   - [Step 3: Add a Credit Card](#step-3-add-a-credit-card)
+4. [Enabling Second-Factor Authentication (2FA) for Root User](#enabling-second-factor-authentication-2fa-for-root-user)
+   - [Step 1: Access AWS Management Console](#step-1-access-aws-management-console)
+   - [Step 2: Navigate to IAM (Identity and Access Management)](#step-2-navigate-to-iam-identity-and-access-management)
+   - [Step 3: Access Root User Security Credentials](#step-3-access-root-user-security-credentials)
+   - [Step 4: Enable MFA (Multi-Factor Authentication)](#step-4-enable-mfa-multi-factor-authentication)
+
+## Introduction
+
+This guide provides step-by-step instructions on creating a new AWS account, setting up payment using a credit card, and enabling second-factor authentication (2FA) for the root user.
+
+## Creating a New AWS Account
+
+### Step 1: Go to AWS Signup Page
+
+Visit the AWS Signup page at [https://aws.amazon.com/](https://aws.amazon.com/) and click on the "Create an AWS Account" button.
+
+### Step 2: Provide Account Information
+
+Fill in the required account information, including email address, password, and AWS account name.
+
+### Step 3: Set Up Identity Verification
+
+Follow the prompts to set up identity verification. This may include providing a phone number for verification purposes.
+
+### Step 4: Choose a Support Plan
+
+Select a support plan based on your requirements. Choose between the free Basic Plan or a paid plan with additional features.
+
+### Step 5: Complete the Registration
+
+Complete the registration process by providing payment information. You will not be charged unless you exceed the limits of the AWS Free Tier.
+
+## Setting Up Payment by Credit Card
+
+### Step 1: Access Billing & Cost Management Console
+
+Log in to the AWS Management Console, navigate to the "Billing & Cost Management" service.
+
+### Step 2: Navigate to the Payment Methods
+
+In the Billing & Cost Management console, select "Payment Methods" from the left navigation pane.
+
+### Step 3: Add a Credit Card
+
+Click on the "Add a credit card" button and enter the required credit card information. Save the changes.
+
+## Enabling Second-Factor Authentication (2FA) for Root User
+
+### Step 1: Access AWS Management Console
+
+Log in to the AWS Management Console using your root user credentials.
+
+### Step 2: Navigate to IAM (Identity and Access Management)
+
+In the AWS Management Console, navigate to the "IAM" service.
+
+### Step 3: Access Root User Security Credentials
+
+Click on "Users" in the IAM dashboard, select the root user, and navigate to the "Security credentials" tab.
+
+### Step 4: Enable MFA (Multi-Factor Authentication)
+
+Under Multi-Factor Authentication (MFA), click on "Manage MFA" and follow the prompts to enable MFA for the root user.
+
+Congratulations! You have successfully created a new AWS account, set up payment by credit card, and enabled second-factor authentication for the root user.
