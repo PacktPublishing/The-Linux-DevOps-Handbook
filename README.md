@@ -44,6 +44,9 @@ Software required | OS required |
 | AWS CLI | Python3 or never |
 | Docker | Linux OS |
 
+### Errata
+* Page 191 (last line): command on the last line `$docker run -d ubuntu while true; do sleep 1; done` _should be_ `$ docker run -d ubuntu sh -c "while true; do sleep 1; done"`
+  
 
 ### Related products
 * Go for DevOps [[Packt]](https://www.packtpub.com/product/go-for-devops/9781801818896?utm_source=github&utm_medium=repository&utm_campaign=9781801818896) [[Amazon]](https://www.amazon.com/dp/1801818894)
