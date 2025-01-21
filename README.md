@@ -1,3 +1,6 @@
+
+<b><p align='center'>[![Packt Sale](https://static.packt-cdn.com/assets/images/image.jpeg)](https://www.packtpub.com/)</p></b>Get this book on sale at [Packt](https://www.packtpub.com/).
+
 # The Linux DevOps Handbook 
 
 <a href="https://www.packtpub.com/product/the-linux-devops-handbook/9781803245669?utm_source=github&utm_medium=repository&utm_campaign=9781786461629"><img src="https://content.packt.com/B18197/cover_image_small.jpg" alt="" height="256px" align="right"></a>
